@@ -83,8 +83,6 @@
       border-radius: 2px;
     }
 
-
-
     /* ── Illuminated header bar ── */
     .gradient-bar {
       height: 10px;
@@ -131,8 +129,6 @@
       background: linear-gradient(180deg, rgba(242,232,208,0) 0%, rgba(228,213,176,0.3) 100%);
     }
 
-
-
     .dr-name {
       font-family: var(--cinzel);
       font-size: 20px;
@@ -176,7 +172,6 @@
     }
     .row.user { justify-content: flex-end; }
 
-    /* Invisible spacer mirrors the avatar on the opposite side */
     .av-spacer {
       width: 34px;
       height: 34px;
@@ -510,7 +505,13 @@ If this is another query about hypogonadism, I suggest the apothecary. If your c
 
 I am Dr. Leerand Hippocratus Marinus, consulting physician. Dr. Rayburn has seen fit to make me available here. I have my reservations about the arrangement.
 
-Syphilitic ulcerations, should that be the matter, are to be treated with Flemish mold extract applied directly to the affected tissue. If you find yourself in acutely perilous condition, summon your local barber-surgeon. State your query.`
+Syphilitic ulcerations, should that be the matter, are to be treated with Flemish mold extract applied directly to the affected tissue. If you find yourself in acutely perilous condition, summon your local barber-surgeon. State your query.`,
+
+    `I was attending to a monograph on splenic displacement — work of some consequence, interrupted now for the second time this morning, the first occasion being a letter from Dr. Archibald Frankfurter, which I mention only to establish the quality of the day I am having.
+
+I am Dr. Leerand Hippocratus Marinus. Dr. Rayburn has retained me, a decision that reflects better on his judgment than most of his others. My time is billable and the ledger is current.
+
+If your condition is acutely perilous, summon your local barber-surgeon. Did Frankfurter refer you? I ask only because his referrals require me to first undo whatever he has done before I can begin what wants doing.`
   ];
 
   const INTRO = INTROS[Math.floor(Math.random() * INTROS.length)];
@@ -536,7 +537,6 @@ Syphilitic ulcerations, should that be the matter, are to be treated with Flemis
       av.textContent = "LM";
       row.appendChild(av);
     } else {
-      // spacer on left for user rows
       const spacer = document.createElement("div");
       spacer.className = "av-spacer";
       row.appendChild(spacer);
@@ -565,7 +565,6 @@ Syphilitic ulcerations, should that be the matter, are to be treated with Flemis
       av.textContent = "you";
       row.appendChild(av);
     } else {
-      // spacer on right for assistant rows
       const spacer = document.createElement("div");
       spacer.className = "av-spacer";
       row.appendChild(spacer);
